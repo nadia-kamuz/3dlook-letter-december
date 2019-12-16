@@ -1,0 +1,183 @@
+.content {
+    .main-content {
+        h2 {
+            font-size: 22px;
+            line-height: 25px;
+
+            img {
+                vertical-align: bottom;
+            }
+        }
+
+        p {
+            img {
+                display: inline-block;
+                vertical-align: bottom;
+            }
+        }
+
+        .card {
+            padding: 0;
+            margin: 0;
+            opacity: 1;
+            z-index: 10;
+            box-shadow: 0 10px 40px 0 rgba(0, 0, 0, 0.1);
+
+            h3 {
+                color: #282828;
+            }
+
+            p {
+                margin-bottom: 10px;
+            }
+        }
+
+        .card-btn-container {
+            display: inline-block;
+            width: 100%;
+            text-align: center;
+
+            .btn {
+                color: #fff;
+            }
+        }
+
+        .magazine-image {
+            width: 100%;
+        }
+    }
+
+    .hidden-desktop {
+        &.article {
+            table {
+                tr {
+                    td{
+                        .btn {
+                            margin-top: 0;
+                            margin-left: auto;
+                            margin-right:  auto;
+                            display: block;
+                        }
+                    }
+                    &:first-child {
+                        td {
+                            background-color: #fff;
+                            img {
+                                width: 100%;
+                            }
+                        }
+                    }
+
+                    &:nth-child(2) {
+                        td {
+                            height: 173px;
+                            background-color: #fff;
+                            padding: 20px !important;
+                            padding-bottom: 48px;
+                            display: inline-block;
+
+                            h3 {
+                                margin: 0 0 10px !important;
+                                color: #282828;
+                            }
+
+                            p {
+                                margin-top: 10px !important;
+                                margin-bottom: 20px !important;
+                            }
+
+                            .btn {
+                                margin-top: 10px;
+                            }
+                        }
+    
+                    }
+                }
+            }
+        }
+    }
+
+    .hidden-mobile {
+        table {
+            margin-bottom: 30px;
+        }
+    }
+
+    .articles {
+        .headline {
+            table {
+                width: 480px;
+
+                h3 {
+                    font-family: Roboto, Arial, sans-serif;
+                    font-size: 20px;
+                    line-height: 24px;
+                    margin-bottom: 30px
+                }
+            }
+        }
+
+        .single-article {
+            >td>table {
+                margin-bottom: 20px;
+            }
+
+            table {
+                tr {
+                    border: 2px solid #E5E5E5;
+                    height: 123px;
+
+                    img {
+                        display: block;
+                        width: 100%;
+                    }
+
+                    td {
+                        &.pl-20 {
+                            padding-top: 5px;
+                            padding-right: 20px;
+                        }
+
+                        .tag {
+                            margin-bottom: 5px;
+                            display: inline-block;
+                            font-family: Roboto, Arial, sans-serif;
+                            font-size: 10px;
+                            font-weight: bold;
+                            text-transform: uppercase;
+                            color: #B1B4BB;
+                        }
+
+                        h3 {
+                            line-height: 16px;
+                            font-family: Roboto, Arial, sans-serif;
+                            font-size: 14px;
+                            font-weight: bold;
+                            margin: 0 0 5px 0 !important;
+                            padding: 0;
+                        }
+
+                        p {
+                            font-family: Roboto, Arial, sans-serif;
+                            font-size: 12px;
+                            margin: 0 !important;
+                            padding: 0 !important;
+
+                            a {
+                                color: #EEB200;
+                                font-weight: bold;
+                            }
+                        }
+
+                        table {
+                            tr {
+                                border: 0;
+                                height: auto;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

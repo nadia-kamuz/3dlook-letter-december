@@ -1,0 +1,23 @@
+.hide-header {
+    display: none;
+}
+
+.header {
+    .header-table {
+        width: 600px;
+        height: 18px;
+        table-layout: fixed;
+        margin-bottom: 58px;
+        margin-top: 38px;
+
+        .header-logo-container {
+            margin: 0 auto;
+            display: block;
+            .header-logo {
+                position: relative;
+                width: 119px;
+                height: 18px;
+            }
+        }
+    }
+}
